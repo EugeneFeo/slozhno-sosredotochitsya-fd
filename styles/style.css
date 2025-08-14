@@ -291,7 +291,6 @@
   }
 
   .section-researches {
-    grid-template-columns: 1fr 2fr;
     margin-block-start: calc(var(--top-space) - 20px);
     display: grid;
     grid-template-columns: minmax(236px, 1fr) 2fr;
@@ -330,9 +329,6 @@
     grid-template-columns: minmax(236px, 1fr) 2fr;
     column-gap: 20px;
     align-items: start;
-  }
-
-  .section-adviсes {
     grid-column: 1;
     inline-size: auto;
   }
