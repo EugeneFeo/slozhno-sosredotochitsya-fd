@@ -52,8 +52,8 @@
 .decorated-zone::before {
   content: '';
   position: absolute;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--decor-color);
+  border-right: 1px solid var(--decor-color);
   block-size: 25px;
   inline-size: 25px;
   inset-block-start: var(--side-space);
@@ -63,8 +63,8 @@
 .decorated-zone::after {
   content: '';
   position: absolute;
-  border-left: 1px solid var(--accent-color);
-  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--decor-color);
+  border-bottom: 1px solid var(--decor-color);
   block-size: 25px;
   inline-size: 25px;
   inset-block-end: var(--side-space);
@@ -85,7 +85,7 @@
   text-transform: lowercase;
   background-color: transparent;
   border: 1px solid transparent;
-  color: var(--accent-color);
+  color: var(--menu-color);
   font-family: var(--font-family), sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -97,11 +97,11 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid rgb(255 0 112 / 0.4);
+  border: 1px solid var(--hover-color);
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--focus-color);
   outline: none;
 }
 
@@ -133,7 +133,7 @@
   font-weight: 700;
   font-size: 18px;
   background-color: var(--accent-color);
-  color: var(--bg-color);
+  color: var(--subtitle-color);
 }
 
 
@@ -142,7 +142,6 @@
   display: grid;
   grid-template-columns: 1fr;
   padding-inline: var(--side-space);
-
 }
 
 .main-section__header {
@@ -150,7 +149,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 130%;
-  color: var(--accent-color);
+  color: var(--header-color);
   inline-size: 355px;
 }
 
@@ -208,7 +207,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 130%;
-  color: var(--bg-color);
+  color: var(--subtitle-color);
 }
 
 
@@ -247,7 +246,7 @@
   text-shadow: 2px 2px 0 var(--accent-color);
   font-family: var(--font-family);
   font-weight: 700;
-  font-size: 116px;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 83%;
   color: var(--title-color);
 }
@@ -308,7 +307,7 @@
   }
 
   .cards-container {
-  margin-block-start: 0;
+  margin-block: 0;
   }
 
   .card-title {
@@ -374,15 +373,14 @@
     min-block-size: 1024px;
     margin-block-start: calc(var(--top-space) - 20px);
   }
+
+  .footer-title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
 }
 
 /*медиа-запрос для десктопа*/
 @media (width >= 1024px) {
-  :root {
-    --side-space: 20px;
-    --top-space: 80px;
-  }
-
   .header {
     min-block-size: 768px;
   }
@@ -408,15 +406,10 @@
   }
 
   .problems-cards__container .cards-list {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 
   .footer {
     min-block-size: 768px;
-  }
-
-  .footer-title {
-  font-size: 157px;
   }
 }

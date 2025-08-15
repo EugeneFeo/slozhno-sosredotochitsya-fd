@@ -14,3 +14,10 @@
 --header-space: 20px;
 --text-space: 10px;
 }
+
+@media (width >= 768px) {
+  :root {
+    --side-space: 20px;
+    --top-space: 80px;
+  }
+}

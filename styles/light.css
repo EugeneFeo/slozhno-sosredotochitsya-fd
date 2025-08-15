@@ -8,6 +8,12 @@
   --bg-image: url(../images/cover-image-light.png);
   --bg-color: #fff1f7;
   --accent-color: #ff8dcb;
+  --decor-color: #353430;
+  --menu-color: #353430;
+  --hover-color: rgba(50, 49, 45, 0.4);
+  --focus-color: #353430;
+  --header-color: #353430;
+  --subtitle-color: #353430;
   --text-color: #353430;
   --title-color: #ffc2e6;
   /* сохраните этот селектор в приведённом виде.
@@ -20,68 +26,22 @@
   display: none;
 }
 
-.theme-light .decorated-zone::before,
-.theme-light .decorated-zone::after {
-  border-color: var(--text-color);
-}
-
-.theme-light .header__theme-menu-button {
-  color: var(--text-color);
-}
-
-.theme-light .header__theme-menu-button:hover {
-  border-color: rgb(50 49 45 / 0.4);
-}
-
-.theme-light .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--text-color);
-}
-
-.theme-light .title-decor {
-  color: var(--text-color);
-  background-color: var(--accent-color);
-}
-
-.theme-light .main-section__header {
-  color: var(--text-color);
-}
-
 @media (prefers-color-scheme: light) {
     :root {
     --bg-image: url(../images/cover-image-light.png);
     --bg-color: #fff1f7;
     --accent-color: #ff8dcb;
+    --decor-color: #353430;
+    --menu-color: #353430;
+    --hover-color: rgba(50, 49, 45, 0.4);
+    --focus-color: #353430;
+    --header-color: #353430;
+    --subtitle-color: #353430;
     --text-color: #353430;
     --title-color: #ffc2e6;
   }
 
   .header-decorated__item {
   display: none;
-  }
-
-  .decorated-zone::before,
-  .decorated-zone::after {
-    border-color: var(--text-color);
-  }
-
-  .header__theme-menu-button {
-    color: var(--text-color);
-  }
-
-  .header__theme-menu-button:hover {
-    border-color: rgb(50 49 45 / 0.4);
-  }
-
-  .header__theme-menu-button:focus-visible {
-    border-bottom: 1px solid var(--text-color);
-  }
-
-  .title-decor {
-    color: var(--text-color);
-    background-color: var(--accent-color);
-  }
-
-  .main-section__header {
-    color: var(--text-color);
   }
 }
