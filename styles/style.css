@@ -26,15 +26,15 @@
 }
 
 .header-decorated__item {
-    position: absolute;
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 139%;
-    text-align: center;
-    color: var(--accent-color);
-    inset-block-start: 10px;
-    inset-inline-end: 38px;
+  position: absolute;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 139%;
+  text-align: center;
+  color: var(--accent-color);
+  inset-block-start: 10px;
+  inset-inline-end: 38px;
 }
 
 .header-decorated__item::after {
@@ -255,11 +255,6 @@
 
 /*медиа-запрос для планшета*/
 @media (width >= 768px) {
-  :root {
-    --side-space: 20px;
-    --top-space: 80px;
-  }
-
   .header {
     grid-template-columns: 1fr 1fr;
     min-block-size: 1024px;
